@@ -1,6 +1,6 @@
 // @ts-check
 import { defineConfig, devices } from '@playwright/test';
-
+import 'dotenv/config';
 
 export default defineConfig({
   testDir: './tests',
@@ -14,6 +14,7 @@ export default defineConfig({
     headless : false,
     screenshot : 'on',
     trace : 'retain-on-failure',
+    baseURL: 'https://eventhub.rahulshettyacademy.com',
   },
 
 });
